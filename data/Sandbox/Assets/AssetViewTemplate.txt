@@ -1,0 +1,25 @@
+%META:TOPICINFO{author="BaseUserMapping_333" comment="reprev" date="1402921146" format="1.1" reprev="2" version="2"}%
+%TMPL:INCLUDE{view}%
+
+%TMPL:DEF{"modacMore"}%
+%TMPL:END%
+
+%TMPL:DEF{"content"}%%TMPL:P{"simpleheader"}%
+
+<div class="widgetBlockTitle">%MAKETEXT{"Asset data"}%</div>
+<div class="widgetBlockContent">
+<table class="metaDataHead">
+<tr><td width="300px;">%MAKETEXT{"Name"}%:</td><td>%RENDERFORDISPLAY{field="TopicTitle" format="$value"}%</td></tr>
+<tr><td>%MAKETEXT{"Description"}%:</td><td>%RENDERFORDISPLAY{field="Description" format="$value"}%</td></tr>
+<tr><td>%MAKETEXT{"Integrity"}%:</td><td>%RENDERFORDISPLAY{field="Integrity" format="$value"}%</td></tr>
+<tr><td>%MAKETEXT{"Availability"}%:</td><td>%RENDERFORDISPLAY{field="Availability" format="$value"}%</td></tr>
+<tr><td>%MAKETEXT{"Authenticity"}%:</td><td>%RENDERFORDISPLAY{field="Authenticity" format="$value"}%</td></tr>
+<tr><td>%MAKETEXT{"Responsibility"}%:</td><td>%RENDERFORDISPLAY{field="Responsibility" format="$value"}%</td></tr>
+</table>
+</div>
+
+
+%TMPL:END%
+
+%META:PREFERENCE{name="NOWYSIWYG" title="NOWYSIWYG" type="Set" value="1"}%
+%META:PREFERENCE{name="ALLOWTOPICCHANGE" title="ALLOWTOPICCHANGE" type="Set" value="AdminGroup"}%

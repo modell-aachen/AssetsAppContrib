@@ -1,0 +1,58 @@
+# German translation for the Assets-Application
+# Translators:
+msgid ""
+msgstr ""
+"Project-Id-Version: Foswiki $Id\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2012-11-26 00:09+0200\n"
+"Last-Translator: Bartek \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.1.6\n"
+
+msgid "Asset data"
+msgstr "Asset-Daten"
+
+msgid "Asset management"
+msgstr "Asset-Management"
+
+msgid "Authenticity"
+msgstr "Authentizität"
+
+msgid "Availability"
+msgstr "Verfügbarkeit"
+
+msgid "Create new asset"
+msgstr "Neues Asset anlegen"
+
+msgid "Description"
+msgstr "Beschreibung"
+
+msgid "Description of asset"
+msgstr "Beschreibung des Assets"
+
+msgid "Integrity"
+msgstr "Integrität"
+
+msgid "high"
+msgstr "hoch"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Name of asset"
+msgstr "Name des Assets"
+
+msgid "normal"
+msgstr "normal"
+
+msgid "Responsibility"
+msgstr "Verantwortlichkeit"
+
+msgid "very high"
+msgstr "sehr hoch"
