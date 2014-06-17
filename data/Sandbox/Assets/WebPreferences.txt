@@ -1,4 +1,4 @@
-%META:TOPICINFO{author="BaseUserMapping_333" comment="reprev" date="1402922150" format="1.1" reprev="4" version="2"}%
+%META:TOPICINFO{author="BaseUserMapping_333" comment="reprev" date="1402995193" format="1.1" reprev="4" version="2"}%
 ---+!! <nop>%WEB% Web Preferences
 
 %TOC%
@@ -10,8 +10,6 @@
 </sticky>
 
 ---++ Modell Aachen Settings
-
-   * Set CONTENTTEMPLATEWEB =
    
    * Set WORKFLOW = 
    
@@ -32,6 +30,8 @@
       * if set to =on=, this web will be exclude web from a global search
 
 ---++ Wiki application settings
+
+   * Set RISKWEB = Sandbox.Risks
 
    * WebTopicEditTemplate
       * default template for new topics in this web, if this topic does not exist,  [[%SYSTEMWEB%.WebTopicEditTemplate][site-level default template]] will be used

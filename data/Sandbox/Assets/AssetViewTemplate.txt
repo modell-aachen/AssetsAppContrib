@@ -1,4 +1,4 @@
-%META:TOPICINFO{author="BaseUserMapping_333" comment="reprev" date="1402921146" format="1.1" reprev="2" version="2"}%
+%META:TOPICINFO{author="BaseUserMapping_333" comment="reprev" date="1402996220" format="1.1" reprev="2" version="2"}%
 %TMPL:INCLUDE{view}%
 
 %TMPL:DEF{"modacMore"}%
@@ -19,6 +19,21 @@
 </table>
 </div>
 
+<div class="widgetBlockTitle">%MAKETEXT{"Known risks"}%</div>
+<div class="widgetBlockContent">
+%TABLE{%TABLETHEMEPARAM%}%
+| *%MAKETEXT{"Name"}%* | *%MAKETEXT{"Responsibility"}%* | *%MAKETEXT{"Raw probability"}%* | *%MAKETEXT{"Raw business impact"}%* | *%MAKETEXT{"Raw risk rating"}%* | *%MAKETEXT{"Last checked"}%* |
+%SOLRSEARCH{
+"form:*RiskForm topic:Risk* field_AssociatedAsset_lst:*%BASETOPIC%"
+fields="web, topic, field_TopicTitle_s, field_Responsibility_lst, field_RawProbability_s, field_RawBusinessImpact_s, field_RawRiskRating_s, field_LastChecked_dt"
+header=""
+format="| [[$web.$topic][$field_TopicTitle_s]] | $field_Responsibility_lst| $field_RawProbability_s|  $field_RawBusinessImpact_s| $field_RawRiskRating_s| $field_LastChecked_dt|$n"
+footer=""
+rows="99999"
+sort="topic asc"
+}%
+
+</div>
 
 %TMPL:END%
 
