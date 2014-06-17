@@ -11,6 +11,7 @@
 <table class="metaDataHead">
 <tr><td width="300px;">%MAKETEXT{"Name"}%:</td><td>%RENDERFORDISPLAY{field="TopicTitle" format="$value"}%</td></tr>
 <tr><td>%MAKETEXT{"Description"}%:</td><td>%RENDERFORDISPLAY{field="Description" format="$value"}%</td></tr>
+<tr><td>%MAKETEXT{"Category"}%:</td><td>%RENDERFORDISPLAY{field="Category" format="$value"}%</td></tr>
 <tr><td>%MAKETEXT{"Integrity"}%:</td><td>%RENDERFORDISPLAY{field="Integrity" format="$value"}%</td></tr>
 <tr><td>%MAKETEXT{"Availability"}%:</td><td>%RENDERFORDISPLAY{field="Availability" format="$value"}%</td></tr>
 <tr><td>%MAKETEXT{"Authenticity"}%:</td><td>%RENDERFORDISPLAY{field="Authenticity" format="$value"}%</td></tr>

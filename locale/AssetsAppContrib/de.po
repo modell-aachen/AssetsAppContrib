@@ -30,6 +30,9 @@ msgstr "Verfügbarkeit"
 msgid "Create new asset"
 msgstr "Neues Asset anlegen"
 
+msgid "Category"
+msgstr "Kategorie"
+
 msgid "Description"
 msgstr "Beschreibung"
 
