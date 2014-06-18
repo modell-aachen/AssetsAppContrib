@@ -14,6 +14,7 @@
 <tr><td>%MAKETEXT{"Availability"}%<font color="red">*</font>:</td><td>%RENDERFOREDIT{field="Availability" format="$edit"}%</td></tr>
 <tr><td>%MAKETEXT{"Authenticity"}%<font color="red">*</font>:</td><td>%RENDERFOREDIT{field="Authenticity" format="$edit"}%</td></tr>
 <tr><td>%MAKETEXT{"Responsibility"}%<font color="red">*</font>:</td><td>%RENDERFOREDIT{field="Responsibility" format="$edit"}%</td></tr>
+<tr><td>%MAKETEXT{"Associated threats"}%<font color="red">*</font>:</td><td>%RENDERFOREDIT{field="AssociatedThreats" format="$edit"}%</td></tr>
 </table>
 </div>
 

@@ -19,6 +19,18 @@
 </table>
 </div>
 
+<div class="widgetBlockTitle">%MAKETEXT{"Known threats"}%</div>
+<div class="widgetBlockContent">
+%TABLE{%TABLETHEMEPARAM%}%
+| *%MAKETEXT{"Chapter"}%* | *%MAKETEXT{"Name"}%* | *%MAKETEXT{"Category"}%* |
+%FORMATLIST{
+"%RENDERFORDISPLAY{field="AssociatedThreats" format="$value"}%"
+separator=""
+format="| $percntQUERY{\"'$1'/Chapter\"}$percnt | [[$1]] | $percntQUERY{\"'$1'/Category\"}$percnt | $n"
+}%
+</div>
+
+
 <div class="widgetBlockTitle">%MAKETEXT{"Known risks"}%</div>
 <div class="widgetBlockContent">
 %TABLE{%TABLETHEMEPARAM%}%

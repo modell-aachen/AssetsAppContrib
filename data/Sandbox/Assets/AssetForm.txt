@@ -7,6 +7,15 @@
 | Availability | select+values | 1 | %MAKETEXT{"normal"}%=normal,%MAKETEXT{"high"}%=high,%MAKETEXT{"very high"}%=very high, | %MAKETEXT{"Availability"}% | M |
 | Authenticity | select+values | 1 | %MAKETEXT{"normal"}%=normal,%MAKETEXT{"high"}%=high,%MAKETEXT{"very high"}%=very high, | %MAKETEXT{"Authenticity"}% | M |
 | Responsibility | textboxlist | 50 mustMatch limit="1"| %USERAUTOCOMPLETE% | %MAKETEXT{"Responsibility"}% | M |
+| AssociatedThreats | textboxlist | 50 mustMatch | %SCRIPTURL{view}%/%WEB%/AssetForm?section=threat;skin=text;limit=20 | %MAKETEXT{"Associated threats"}% | M |
+
+
+<verbatim>
+%STARTSECTION{"threat"}%[%SOLRSEARCH{
+  "web:%THREATWEB% type:topic form:*ThreatForm title_search:?* -topic:*%WORKFLOWSUFFIX% (webtopic_search:(%FORMATLIST{"%CALC{"$LOWER(%URLPARAM{"term" default="does not exist"}%)"}%" split=" " separator=" " pattern="(.*)" format="*$1*"}%) OR title_search:(%FORMATLIST{"%CALC{"$LOWER(%URLPARAM{"term" default="does not exist"}%)"}%" split=" " separator=" " pattern="(.*)" format="*$1*"}%))" format="<nop>%URLPARAM{"format" encode="quote" default="{\\"label\\":\\"$percntENCODE{\\"$field_Chapter_s $title\\" type=\\"safe\\"}$percnt\\",\\"sublabel\\":\\"$web.$topic\\",\\"value\\":\\"$web.$topic\\"}"}%" separator="," limit="%URLPARAM{"limit" default="10"}%"
+}%]%ENDSECTION{"threat"}%
+</verbatim>
+
 
 %META:PREFERENCE{name="NOWYSIWYG" title="NOWYSIWYG" type="Set" value="1"}%
 %META:PREFERENCE{name="ALLOWTOPICCHANGE" title="ALLOWTOPICCHANGE" type="Set" value="AdminGroup"}%

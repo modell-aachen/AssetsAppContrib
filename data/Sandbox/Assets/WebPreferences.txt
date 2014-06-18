@@ -32,6 +32,7 @@
 ---++ Wiki application settings
 
    * Set RISKWEB = Sandbox.Risks
+   * Set THREATWEB = Sandbox.Threats
 
    * WebTopicEditTemplate
       * default template for new topics in this web, if this topic does not exist,  [[%SYSTEMWEB%.WebTopicEditTemplate][site-level default template]] will be used
