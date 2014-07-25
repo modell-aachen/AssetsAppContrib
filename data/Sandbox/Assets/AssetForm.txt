@@ -2,7 +2,8 @@
 | *Name* | *Type* | *Size* | *Values* | *Tooltip message* | *Attributes* |
 | TopicTitle | text | 50 | | %MAKETEXT{"Name of asset"}% | M |
 | Category | text | 50 | | %MAKETEXT{"Category"}% |  |
-| Description | textarea | 50x3 | | %MAKETEXT{"Description of asset"}% |  |
+| Description | editor | | | %MAKETEXT{"Description of asset"}% |  |
+| Confidentiality | select+values | 1 | %MAKETEXT{"normal"}%=normal,%MAKETEXT{"high"}%=high,%MAKETEXT{"very high"}%=very high, | %MAKETEXT{"Confidentiality"}% | M |
 | Integrity | select+values | 1 | %MAKETEXT{"normal"}%=normal,%MAKETEXT{"high"}%=high,%MAKETEXT{"very high"}%=very high, | %MAKETEXT{"Integrity"}% | M |
 | Availability | select+values | 1 | %MAKETEXT{"normal"}%=normal,%MAKETEXT{"high"}%=high,%MAKETEXT{"very high"}%=very high, | %MAKETEXT{"Availability"}% | M |
 | Authenticity | select+values | 1 | %MAKETEXT{"normal"}%=normal,%MAKETEXT{"high"}%=high,%MAKETEXT{"very high"}%=very high, | %MAKETEXT{"Authenticity"}% | M |

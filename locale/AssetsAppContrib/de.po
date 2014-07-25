@@ -33,6 +33,9 @@ msgstr "Neues Asset anlegen"
 msgid "Category"
 msgstr "Kategorie"
 
+msgid "Confidentiality"
+msgstr "Vertraulichkeit"
+
 msgid "Description"
 msgstr "Beschreibung"
 
