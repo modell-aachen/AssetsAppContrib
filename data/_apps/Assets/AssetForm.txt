@@ -8,7 +8,7 @@
 | Availability | select+values | 1 | %MAKETEXT{"normal"}%=normal,%MAKETEXT{"high"}%=high,%MAKETEXT{"very high"}%=very high, | %MAKETEXT{"Availability"}% | M |
 | Authenticity | select+values | 1 | %MAKETEXT{"normal"}%=normal,%MAKETEXT{"high"}%=high,%MAKETEXT{"very high"}%=very high, | %MAKETEXT{"Authenticity"}% | M |
 | Responsibility | textboxlist | 50 mustMatch limit="1"| %USERAUTOCOMPLETE% | %MAKETEXT{"Responsibility"}% | M |
-| AssociatedThreats | textboxlist | 50 mustMatch | %SCRIPTURL{view}%/%WEB%/AssetForm?section=threat;skin=text;limit=20 | %MAKETEXT{"Associated threats"}% | M |
+| AssociatedThreats | textboxlist | 50 mustMatch | %SCRIPTURL{view}%/%WEB%/AssetForm?section=threat;skin=text;limit=20 | %MAKETEXT{"Associated threats"}% | |
 
 
 <verbatim>

@@ -16,7 +16,7 @@ msgstr ""
 "X-Generator: Pootle 2.1.6\n"
 
 msgid "Asset data"
-msgstr "Asset-Daten"
+msgstr "Wert Angaben"
 
 msgid "Asset management"
 msgstr "Asset-Management"
@@ -38,6 +38,12 @@ msgstr "Vertraulichkeit"
 
 msgid "Description"
 msgstr "Beschreibung"
+
+msgid "Known threats"
+msgstr "Bekannte Bedrohungen"
+
+msgid "Known risks"
+msgstr "Bekannte Risiken"
 
 msgid "Description of asset"
 msgstr "Beschreibung des Assets"

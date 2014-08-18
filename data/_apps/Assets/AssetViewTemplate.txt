@@ -1,54 +1,46 @@
 %META:TOPICINFO{author="BaseUserMapping_333" comment="reprev" date="1402996220" format="1.1" reprev="2" version="2"}%
 %TMPL:INCLUDE{view}%
-
 %TMPL:DEF{"modacMore"}%
 %TMPL:END%
-
 %TMPL:DEF{"content"}%%TMPL:P{"simpleheader"}%
-
 <div class="widgetBlockTitle">%MAKETEXT{"Asset data"}%</div>
 <div class="widgetBlockContent">
-<table class="metaDataHead">
-<tr><td width="300px;">%MAKETEXT{"Name"}%:</td><td>%RENDERFORDISPLAY{field="TopicTitle" format="$value"}%</td></tr>
-<tr><td>%MAKETEXT{"Description"}%:</td><td>%RENDERFORDISPLAY{field="Description" format="$value"}%</td></tr>
-<tr><td>%MAKETEXT{"Category"}%:</td><td>%RENDERFORDISPLAY{field="Category" format="$value"}%</td></tr>
-<tr><td>%MAKETEXT{"Confidentiality"}%:</td><td>%RENDERFORDISPLAY{field="Confidentiality" format="$value"}%</td></tr>
-<tr><td>%MAKETEXT{"Integrity"}%:</td><td>%RENDERFORDISPLAY{field="Integrity" format="$value"}%</td></tr>
-<tr><td>%MAKETEXT{"Availability"}%:</td><td>%RENDERFORDISPLAY{field="Availability" format="$value"}%</td></tr>
-<tr><td>%MAKETEXT{"Authenticity"}%:</td><td>%RENDERFORDISPLAY{field="Authenticity" format="$value"}%</td></tr>
-<tr><td>%MAKETEXT{"Responsibility"}%:</td><td>%RENDERFORDISPLAY{field="Responsibility" format="$value"}%</td></tr>
-</table>
+   <table class="metaDataHead">
+      <tr><td width="300px;">%MAKETEXT{"Name"}%:</td><td>%RENDERFORDISPLAY{field="TopicTitle" format="$value"}%</td></tr>
+      <tr><td>%MAKETEXT{"Description"}%:</td><td>%RENDERFORDISPLAY{field="Description" format="$value"}%</td></tr>
+      <tr><td>%MAKETEXT{"Category"}%:</td><td>%RENDERFORDISPLAY{field="Category" format="$value"}%</td></tr>
+      <tr><td>%MAKETEXT{"Confidentiality"}%:</td><td>%RENDERFORDISPLAY{field="Confidentiality" format="$value"}%</td></tr>
+      <tr><td>%MAKETEXT{"Integrity"}%:</td><td>%RENDERFORDISPLAY{field="Integrity" format="$value"}%</td></tr>
+      <tr><td>%MAKETEXT{"Availability"}%:</td><td>%RENDERFORDISPLAY{field="Availability" format="$value"}%</td></tr>
+      <tr><td>%MAKETEXT{"Authenticity"}%:</td><td>%RENDERFORDISPLAY{field="Authenticity" format="$value"}%</td></tr>
+      <tr><td>%MAKETEXT{"Responsibility"}%:</td><td>%RENDERFORDISPLAY{field="Responsibility" format="$value"}%</td></tr>
+   </table>
 </div>
-
 <div class="widgetBlockTitle">%MAKETEXT{"Known threats"}%</div>
 <div class="widgetBlockContent">
-%TABLE{%TABLETHEMEPARAM%}%
-| *%MAKETEXT{"Chapter"}%* | *%MAKETEXT{"Name"}%* | *%MAKETEXT{"Category"}%* |
-%FORMATLIST{
-"%RENDERFORDISPLAY{field="AssociatedThreats" format="$value"}%"
-separator=""
-format="| $percntQUERY{\"'$1'/Chapter\"}$percnt | [[$1]] | $percntQUERY{\"'$1'/Category\"}$percnt | $n"
-}%
+   %TABLE{%TABLETHEMEPARAM%}%
+   | *%MAKETEXT{"Chapter"}%* | *%MAKETEXT{"Name"}%* | *%MAKETEXT{"Category"}%* |
+   %FORMATLIST{
+      "%RENDERFORDISPLAY{field="AssociatedThreats" format="$value"}%"
+      separator=""
+      format="| $percntQUERY{\"'$1'/Chapter\"}$percnt | [[$1]] | $percntQUERY{\"'$1'/Category\"}$percnt | $n"
+   }%
 </div>
-
-
 <div class="widgetBlockTitle">%MAKETEXT{"Known risks"}%</div>
 <div class="widgetBlockContent">
-%TABLE{%TABLETHEMEPARAM%}%
-| *%MAKETEXT{"Name"}%* | *%MAKETEXT{"Responsibility"}%* | *%MAKETEXT{"Raw probability"}%* | *%MAKETEXT{"Raw business impact"}%* | *%MAKETEXT{"Raw risk rating"}%* | *%MAKETEXT{"Last checked"}%* |
-%SOLRSEARCH{
-"form:*RiskForm topic:Risk* field_AssociatedAsset_lst:*%BASETOPIC%"
-fields="web, topic, field_TopicTitle_s, field_Responsibility_lst, field_RawProbability_s, field_RawBusinessImpact_s, field_RawRiskRating_s, field_LastChecked_dt"
-header=""
-format="| [[$web.$topic][$field_TopicTitle_s]] | $field_Responsibility_lst| $field_RawProbability_s|  $field_RawBusinessImpact_s| $field_RawRiskRating_s| $field_LastChecked_dt|$n"
-footer=""
-rows="99999"
-sort="topic asc"
-}%
-
+   %BUTTON{"%MAKETEXT{"Create new risk"}%" icon="add" href="%SCRIPTURLPATH{"edit"}%/%RISKWEB%/RiskAUTOINC0000?AssociatedAsset=%BASEWEB%.%BASETOPIC%;templatetopic=%RISKWEB%.RiskTemplate;formtemplate=RiskForm;template=%RISKWEB%.RiskEditTemplate;t=%GMTIME{$epoch}%;redirectto=%BASEWEB%.%BASETOPIC%"}%
+   %TABLE{%TABLETHEMEPARAM%}%
+   | *%MAKETEXT{"Name"}%* | *%MAKETEXT{"Responsibility"}%* | *%MAKETEXT{"Raw probability"}%* | *%MAKETEXT{"Raw business impact"}%* | *%MAKETEXT{"Raw risk rating"}%* | *%MAKETEXT{"Last checked"}%* |
+   %SOLRSEARCH{
+      "form:*RiskForm topic:Risk* field_AssociatedAsset_lst:*%BASETOPIC%"
+      fields="web, topic, field_TopicTitle_s, field_Responsibility_lst, field_RawProbability_s, field_RawBusinessImpact_s, field_RawRiskRating_s, field_LastChecked_dt"
+      header=""
+      format="| [[$web.$topic][$field_TopicTitle_s]] | $field_Responsibility_lst| $field_RawProbability_s|  $field_RawBusinessImpact_s| $field_RawRiskRating_s| $field_LastChecked_dt|$n"
+      footer=""
+      rows="99999"
+      sort="topic asc"
+   }%
 </div>
-
 %TMPL:END%
-
 %META:PREFERENCE{name="NOWYSIWYG" title="NOWYSIWYG" type="Set" value="1"}%
 %META:PREFERENCE{name="ALLOWTOPICCHANGE" title="ALLOWTOPICCHANGE" type="Set" value="AdminGroup"}%
