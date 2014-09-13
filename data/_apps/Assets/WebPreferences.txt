@@ -1,4 +1,4 @@
-%META:TOPICINFO{author="BaseUserMapping_333" comment="pending" date="1406108773" format="1.1" reprev="1" version="1"}%
+%META:TOPICINFO{author="BaseUserMapping_333" comment="pending" date="1410523585" format="1.1" reprev="1" version="2"}%
 ---+!! <nop>%WEB% Web Preferences
 
 %TOC%
@@ -26,12 +26,12 @@
    * Set WEBSUMMARY = 
       * description what this web is used for
 
-   * Set NOSEARCHALL = 
+   * Set NOSEARCHALL = off
       * if set to =on=, this web will be exclude web from a global search
 
 ---++ Wiki application settings
 
-   * Set RISKWEB = Sandbox.Risks
+   * Set RISKWEB = Risks
    * Set THREATWEB = Sandbox.Threats
 
    
@@ -39,7 +39,7 @@
    * WebTopicEditTemplate
       * default template for new topics in this web, if this topic does not exist,  [[%SYSTEMWEB%.WebTopicEditTemplate][site-level default template]] will be used
 
-   * Set WEBFORMS =
+   * Set WEBFORMS = 
       * Comma separated list of forms that can be attached to topics in this web. See [[%SYSTEMWEB%.DataForms][DataForms]] for more information.
 
 ---++ Access control

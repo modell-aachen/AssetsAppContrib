@@ -11,13 +11,10 @@
     <table class="metaDataHead">
         <tr><td width="300px;">%MAKETEXT{"Name"}%<font color="red">*</font>:</td><td>%RENDERFOREDIT{field="TopicTitle" format="$edit"}%</td><td></td></tr>
         <tr><td>%MAKETEXT{"Description"}%:</td><td>%RENDERFOREDIT{field="Description" format="$edit"}%</td><td></td></tr>
-        <tr><td>%MAKETEXT{"Category"}%:</td><td>%RENDERFOREDIT{field="Category" format="$edit"}%</td><td></td></tr>
-        <tr><td>%MAKETEXT{"Confidentiality"}%<font color="red">*</font>:</td><td>%RENDERFOREDIT{field="Confidentiality" format="$edit"}%</td><td></td></tr>
-        <tr><td>%MAKETEXT{"Integrity"}%<font color="red">*</font>:</td><td>%RENDERFOREDIT{field="Integrity" format="$edit"}%</td><td></td></tr>
         <tr><td>%MAKETEXT{"Availability"}%<font color="red">*</font>:</td><td>%RENDERFOREDIT{field="Availability" format="$edit"}%</td><td></td></tr>
-        <tr><td>%MAKETEXT{"Authenticity"}%<font color="red">*</font>:</td><td>%RENDERFOREDIT{field="Authenticity" format="$edit"}%</td><td></td></tr>
+        <tr><td>%MAKETEXT{"Integrity"}%<font color="red">*</font>:</td><td>%RENDERFOREDIT{field="Integrity" format="$edit"}%</td><td></td></tr>
+        <tr><td>%MAKETEXT{"Confidentiality"}%<font color="red">*</font>:</td><td>%RENDERFOREDIT{field="Confidentiality" format="$edit"}%</td><td></td></tr>
         <tr><td>%MAKETEXT{"Responsibility"}%<font color="red">*</font>:</td><td>%RENDERFOREDIT{field="Responsibility" format="$edit"}%</td><td></td></tr>
-        <tr><td>%MAKETEXT{"Associated threats"}%:</td><td>%RENDERFOREDIT{field="AssociatedThreats" format="$edit"}%</td><td></td></tr>
     </table>
 </div>
 

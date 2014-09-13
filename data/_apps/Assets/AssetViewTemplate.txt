@@ -8,15 +8,18 @@
    <table class="metaDataHead">
       <tr><td width="300px;">%MAKETEXT{"Name"}%:</td><td>%RENDERFORDISPLAY{field="TopicTitle" format="$value"}%</td></tr>
       <tr><td>%MAKETEXT{"Description"}%:</td><td>%RENDERFORDISPLAY{field="Description" format="$value"}%</td></tr>
-      <tr><td>%MAKETEXT{"Category"}%:</td><td>%RENDERFORDISPLAY{field="Category" format="$value"}%</td></tr>
+      <!-- <tr><td>%MAKETEXT{"Category"}%:</td><td>%RENDERFORDISPLAY{field="Category" format="$value"}%</td></tr> -->
       <tr><td>%MAKETEXT{"Confidentiality"}%:</td><td>%RENDERFORDISPLAY{field="Confidentiality" format="$value"}%</td></tr>
       <tr><td>%MAKETEXT{"Integrity"}%:</td><td>%RENDERFORDISPLAY{field="Integrity" format="$value"}%</td></tr>
       <tr><td>%MAKETEXT{"Availability"}%:</td><td>%RENDERFORDISPLAY{field="Availability" format="$value"}%</td></tr>
-      <tr><td>%MAKETEXT{"Authenticity"}%:</td><td>%RENDERFORDISPLAY{field="Authenticity" format="$value"}%</td></tr>
+      <!-- <tr><td>%MAKETEXT{"Authenticity"}%:</td><td>%RENDERFORDISPLAY{field="Authenticity" format="$value"}%</td></tr> -->
       <tr><td>%MAKETEXT{"Responsibility"}%:</td><td>%RENDERFORDISPLAY{field="Responsibility" format="$value"}%</td></tr>
    </table>
 </div>
-<div class="widgetBlockTitle">%MAKETEXT{"Known threats"}%</div>
+
+
+
+<!-- <div class="widgetBlockTitle">%MAKETEXT{"Known threats"}%</div>
 <div class="widgetBlockContent">
    %TABLE{%TABLETHEMEPARAM%}%
    | *%MAKETEXT{"Chapter"}%* | *%MAKETEXT{"Name"}%* | *%MAKETEXT{"Category"}%* |
@@ -25,7 +28,8 @@
       separator=""
       format="| $percntQUERY{\"'$1'/Chapter\"}$percnt | [[$1]] | $percntQUERY{\"'$1'/Category\"}$percnt | $n"
    }%
-</div>
+</div> -->
+
 <div class="widgetBlockTitle">%MAKETEXT{"Known risks"}%</div>
 <div class="widgetBlockContent">
    %BUTTON{"%MAKETEXT{"Create new risk"}%" icon="add" href="%SCRIPTURLPATH{"edit"}%/%RISKWEB%/RiskAUTOINC0000?AssociatedAsset=%BASEWEB%.%BASETOPIC%;templatetopic=%RISKWEB%.RiskTemplate;formtemplate=RiskForm;template=%RISKWEB%.RiskEditTemplate;t=%GMTIME{$epoch}%;redirectto=%BASEWEB%.%BASETOPIC%"}%

@@ -49,7 +49,7 @@ msgid "Description of asset"
 msgstr "Beschreibung des Assets"
 
 msgid "Integrity"
-msgstr "Integrität"
+msgstr "Korrektheit"
 
 msgid "high"
 msgstr "hoch"

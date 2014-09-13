@@ -2,12 +2,12 @@
 <div class="widgetBlockTitle">%MAKETEXT{"Asset management"}%</div>
 <div class="widgetBlockContent">
 %TABLE{%TABLETHEMEPARAM%}%
-| *%MAKETEXT{"Name"}%* | *%MAKETEXT{"Confidentiality"}%* | *%MAKETEXT{"Integrity"}%* | *%MAKETEXT{"Availability"}%* | *%MAKETEXT{"Authenticity"}%* | *%MAKETEXT{"Responsibility"}%* |
+| *%MAKETEXT{"Name"}%* | *%MAKETEXT{"Availability"}%* | *%MAKETEXT{"Integrity"}%* | *%MAKETEXT{"Confidentiality"}%* | *%MAKETEXT{"Responsibility"}%* |
 %SOLRSEARCH{
 "form:*AssetForm"
-fields="web, topic, field_TopicTitle_s, field_Responsibility_lst, field_Integrity_s, field_Availability_s, field_Authenticity_s, field_Confidentiality_s"
+fields="web, topic, field_TopicTitle_s, field_Responsibility_lst, field_Integrity_s, field_Availability_s, field_Confidentiality_s"
 header=""
-format="| [[$web.$topic][$field_TopicTitle_s]] | $field_Confidentiality_s | $field_Integrity_s | $field_Availability_s | $field_Authenticity_s | $field_Responsibility_lst| $n"
+format="| [[$web.$topic][$field_TopicTitle_s]] | $field_Availability_s | $field_Integrity_s | $field_Confidentiality_s | $field_Responsibility_lst| $n"
 footer=""
 rows="99999"
 sort="topic asc"
