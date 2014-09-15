@@ -2,5 +2,10 @@
 *.js text
 *.pl text
 *.pm text
+*.po text
 *.txt text
 *.tmpl text
+.gitattributes text
+.gitignore text
+MANIFEST text
+DEPENDENCIES text
