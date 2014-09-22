@@ -19,7 +19,7 @@ msgid "Asset data"
 msgstr "Wert Angaben"
 
 msgid "Asset management"
-msgstr "Werte-Management"
+msgstr "Werte Management"
 
 msgid "Authenticity"
 msgstr "Authentizität"
