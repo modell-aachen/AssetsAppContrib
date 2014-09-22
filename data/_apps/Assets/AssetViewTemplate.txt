@@ -13,7 +13,7 @@
       <tr><td>%MAKETEXT{"Integrity"}%:</td><td>%RENDERFORDISPLAY{field="Integrity" format="$value"}%</td></tr>
       <tr><td>%MAKETEXT{"Availability"}%:</td><td>%RENDERFORDISPLAY{field="Availability" format="$value"}%</td></tr>
       <!-- <tr><td>%MAKETEXT{"Authenticity"}%:</td><td>%RENDERFORDISPLAY{field="Authenticity" format="$value"}%</td></tr> -->
-      <tr><td>%MAKETEXT{"Responsibility"}%:</td><td>%RENDERFORDISPLAY{field="Responsibility" format="$value"}%</td></tr>
+      <tr><td>%MAKETEXT{"Responsible"}%:</td><td>%RENDERFORDISPLAY{field="Responsibility" format="$value"}%</td></tr>
    </table>
 </div>
 

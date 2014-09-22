@@ -2,7 +2,7 @@
 <div class="widgetBlockTitle">%MAKETEXT{"Asset management"}%</div>
 <div class="widgetBlockContent">
 %TABLE{%TABLETHEMEPARAM%}%
-| *%MAKETEXT{"Name"}%* | *%MAKETEXT{"Availability"}%* | *%MAKETEXT{"Integrity"}%* | *%MAKETEXT{"Confidentiality"}%* | *%MAKETEXT{"Responsibility"}%* |
+| *%MAKETEXT{"Name"}%* | *%MAKETEXT{"Availability"}%* | *%MAKETEXT{"Integrity"}%* | *%MAKETEXT{"Confidentiality"}%* | *%MAKETEXT{"Responsible"}%* |
 %SOLRSEARCH{
 "form:*AssetForm"
 fields="web, topic, field_TopicTitle_s, field_Responsibility_lst, field_Integrity_s, field_Availability_s, field_Confidentiality_s"

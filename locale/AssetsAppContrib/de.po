@@ -19,7 +19,7 @@ msgid "Asset data"
 msgstr "Wert Angaben"
 
 msgid "Asset management"
-msgstr "Asset-Management"
+msgstr "Werte-Management"
 
 msgid "Authenticity"
 msgstr "Authentizität"
@@ -28,7 +28,7 @@ msgid "Availability"
 msgstr "Verfügbarkeit"
 
 msgid "Create new asset"
-msgstr "Neues Asset anlegen"
+msgstr "Neuen Wert anlegen"
 
 msgid "Category"
 msgstr "Kategorie"
@@ -63,8 +63,8 @@ msgstr "Name des Assets"
 msgid "normal"
 msgstr "normal"
 
-msgid "Responsibility"
-msgstr "Verantwortlichkeit"
+msgid "Responsible"
+msgstr "Verantwortlich"
 
 msgid "very high"
 msgstr "sehr hoch"
