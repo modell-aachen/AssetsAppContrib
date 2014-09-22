@@ -2,6 +2,7 @@ data/_apps/Assets/AssetEditTemplate.txt 0644
 data/_apps/Assets/AssetForm.txt 0644
 data/_apps/Assets/AssetTemplate.txt 0644
 data/_apps/Assets/AssetViewTemplate.txt 0644
+data/_apps/Assets/CKEditorPlugin.txt 0644
 data/_apps/Assets/WebActions.txt 0644
 data/_apps/Assets/WebAtom.txt 0644
 data/_apps/Assets/WebChanges.txt 0644
@@ -12,9 +13,8 @@ data/_apps/Assets/WebIndex.txt 0644
 data/_apps/Assets/WebNotify.txt 0644
 data/_apps/Assets/WebPreferences.txt 0644
 data/_apps/Assets/WebRss.txt 0644
-data/_apps/Assets/WebSearchAdvanced.txt 0644
 data/_apps/Assets/WebSearch.txt 0644
+data/_apps/Assets/WebSearchAdvanced.txt 0644
 data/_apps/Assets/WebTopicList.txt 0644
-data/System/AssetsAppContrib.txt 0644
 lib/Foswiki/Contrib/AssetsAppContrib.pm 0644
 locale/AssetsAppContrib/de.po 0644
