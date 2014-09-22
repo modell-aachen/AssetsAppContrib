@@ -32,14 +32,14 @@
 
 <div class="widgetBlockTitle">%MAKETEXT{"Known risks"}%</div>
 <div class="widgetBlockContent">
-   %BUTTON{"%MAKETEXT{"Create new risk"}%" icon="add" href="%SCRIPTURLPATH{"edit"}%/%RISKWEB%/RiskAUTOINC0000?AssociatedAsset=%BASEWEB%.%BASETOPIC%;templatetopic=%RISKWEB%.RiskTemplate;formtemplate=RiskForm;template=%RISKWEB%.RiskEditTemplate;t=%GMTIME{$epoch}%;redirectto=%BASEWEB%.%BASETOPIC%"}%
+   %BUTTON{"%MAKETEXT{"Create new risk"}%" icon="add" href="%SCRIPTURLPATH{"edit"}%/%RISKWEB%/RiskAUTOINC0000?SourceOfRisk=%BASEWEB%.%BASETOPIC%;templatetopic=%RISKWEB%.RiskTemplate;formtemplate=RiskForm;template=%RISKWEB%.RiskEditTemplate;t=%GMTIME{$epoch}%;redirectto=%BASEWEB%.%BASETOPIC%"}%
    %TABLE{%TABLETHEMEPARAM%}%
-   | *%MAKETEXT{"Name"}%* | *%MAKETEXT{"Responsibility"}%* | *%MAKETEXT{"Raw probability"}%* | *%MAKETEXT{"Raw business impact"}%* | *%MAKETEXT{"Raw risk rating"}%* | *%MAKETEXT{"Last checked"}%* |
+   | *%MAKETEXT{"Name"}%* | *%MAKETEXT{"Responsibility"}%* | *%MAKETEXT{"Severity"}%* | *%MAKETEXT{"Occurrence"}%* | *%MAKETEXT{"Detection"}%* | *%MAKETEXT{"Risk level"}%* | *%MAKETEXT{"Last checked"}%* |
    %SOLRSEARCH{
-      "form:*RiskForm topic:Risk* field_AssociatedAsset_lst:*%BASETOPIC%"
-      fields="web, topic, field_TopicTitle_s, field_Responsibility_lst, field_RawProbability_s, field_RawBusinessImpact_s, field_RawRiskRating_s, field_LastChecked_dt"
+      "form:*RiskForm topic:Risk* field_SourceOfRisk_lst:*%BASETOPIC%"
+      fields="web, topic, field_TopicTitle_s, field_Responsibility_lst, field_Severity_s, field_Occurrence_s, field_Detection_s, field_Risklevel_s, field_LastChecked_dt"
       header=""
-      format="| [[$web.$topic][$field_TopicTitle_s]] | $field_Responsibility_lst| $field_RawProbability_s|  $field_RawBusinessImpact_s| $field_RawRiskRating_s| $field_LastChecked_dt|$n"
+      format="| [[$web.$topic][$field_TopicTitle_s]] | $field_Responsibility_lst| $field_Severity_s|  $field_Occurrence_s| $field_Detection_s| $field_Risklevel_s | $field_LastChecked_dt |$n"
       footer=""
       rows="99999"
       sort="topic asc"
